@@ -1,27 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* START: General styles */
+.max-width {
+  @apply max-w-[1440px] mx-auto;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.padding-x {
+  @apply sm:px-16 px-6;
 }
+
+.padding-y {
+  @apply py-4;
+}
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
+.flex-between-start {
+  @apply flex justify-between items-start;
+}
+
+.flex-col-start {
+  @apply flex flex-col items-start gap-3;
+}
+
+.button {
+  @apply outline-none flex-center md:py-[16px] md:px-[48px] px-[24px] py-[14px] text-black-100 font-bold md:text-[18px] text-[14px] cursor-pointer hover:bg-opacity-90 transition-all duration-300
+}
+/* END: General styles */
+
+/* START: Hero styles */
+.hero {
+  @apply flex xl:flex-row flex-col gap-5 relative z-0 max-width md:pt-36 pt-24 lg:pb-28 md:pb-14 pb-8;
+}
+
+.hero__title {
+  @apply 2xl:text-[56px] sm:text-[50px] text-[44px] font-bold text-white;
+}
+
+.hero__subtitle {
+  @apply text-[24px] font-light mt-5 text-white;
+}
+
+.hero__image-container {
+  @apply xl:flex-[1.5] flex justify-end items-end w-full;
+}
+
+.hero__image {
+  @apply relative xl:w-full w-[90%] xl:h-full lg:h-[590px] md:h-[460px] h-[260px] z-0;
+}
+
+.hero__image-overlay {
+  @apply absolute xl:-top-24 xl:-right-1/2 -right-1/4 bg-hero-bg bg-repeat-round -z-10 w-full xl:h-screen h-[590px] overflow-hidden;
+}
+/* END: Hero styles */
+
+/* START: Footer styles */
+.footer {
+  @apply flex flex-col text-white bg-black-100;
+}
+
+.footer__menu {
+  @apply flex md:justify-between items-start md:flex-row flex-col gap-5
+}
+
+.footer__contact {
+  @apply flex-center py-10 bg-white bg-opacity-5 padding-x
+}
+
+.footer__address {
+  @apply text-gray-400 text-[16px]
+}
+
+.footer__links {
+  @apply flex-center gap-10;
+}
+
+.footer__link {
+  @apply text-[16px] font-light;
+}
+
+.footer__copyrights {
+  @apply flex justify-between items-center flex-wrap mt-10 border-t border-gray-100 sm:px-16 px-6 py-10;
+}
+
+.footer__copyrights-link {
+  @apply flex-1 flex sm:justify-end justify-center max-sm:mt-4 gap-10;
+}
+
+.footer__form-text {
+  @apply text-white md:text-[36px] text-[22px] font-semibold
+}
+
+.footer__form-input {
+  @apply outline-none bg-inherit border border-dark-grey text-white placeholder:text-medium-grey text-[16px] font-light p-4
+}
+/* END: Footer styles */
+
+/* START: Car card styles */
+.car-card {
+  @apply flex flex-col bg-light-grey px-2 pt-3 pb-8 gap-6 cursor-pointer hover:bg-light-yellow transition-all duration-500
+}
+
+.car-card__image-container {
+  @apply relative w-full object-contain h-40
+}
+
+.car-card__text-container {
+  @apply flex flex-col items-center justify-center px-2
+}
+
+.car-card__title {
+  @apply text-[22px] font-semibold capitalize text-center my-1
+}
+
+.car-card__subtitle {
+  @apply text-[14px] font-light text-medium-grey
+}
+
+.car-card__icons {
+  @apply flex-center gap-5 w-full
+}
+
+.car-card__icons-text {
+  @apply text-[22px] font-semibold
+}
+
+/* END: Car card styles */

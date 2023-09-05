@@ -1,34 +1,103 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Car Catalog App
 
-## Getting Started
+## Description
 
-First, run the development server:
+The Car Catalog App is a web application that provides information about automobiles. It can be used as both a car sales and rental platform, offering users the ability to filter cars by manufacturer and year of manufacture. The application utilizes the Cars by API-Ninjas API to retrieve car data. Additionally, it features Google authentication for users to save their favorite cars. The app is fully responsive and built using the following technologies: Next.js, Next Auth, React, TypeScript, MongoDB, and Tailwind CSS.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Images
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Main section
+![img.png](img.png)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Car details
+![img_1.png](img_1.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Favorite cars
+![img_2.png](img_2.png)
+## Features
 
-## Learn More
+- **Car Information**: Access detailed information about various car models, including specifications, images, and more.
 
-To learn more about Next.js, take a look at the following resources:
+- **Filtering**: Easily filter cars by manufacturer and year of manufacture to find the perfect vehicle.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Authentication**: Use Google authentication to create and manage user accounts.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Favorites**: Allow users to save their favorite cars for quick access.
 
-## Deploy on Vercel
+- **Responsive Design**: The app is fully responsive, ensuring a seamless experience on both desktop and mobile devices.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Technologies Used
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Next.js**: A React framework for building fast and scalable web applications.
+
+- **Next Auth**: An authentication library for Next.js that supports various authentication providers, including Google.
+
+- **React**: A JavaScript library for building user interfaces.
+
+- **TypeScript**: A statically typed superset of JavaScript for enhanced development.
+
+- **MongoDB**: A NoSQL database for storing and managing data efficiently.
+
+- **Tailwind CSS**: A utility-first CSS framework for building responsive and customizable web designs.
+
+## Installation
+
+To run the Car Catalog App locally, follow these steps:
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/your-repo-url.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd car-catalog-app
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Configure environment variables by creating a `.env` file with the following content:
+
+   ```plaintext
+    API_KEY=your-cars-by-api-ninjas-key
+    GOOGLE_ID=your-google-client-id
+    GOOGLE_SECRET=your-google-client-secret
+    MONGODB_URI=your-mongodb-uri
+    NEXTAUTH_URL=http://localhost:3000
+    NEXTAUTH_URL_INTERNAL=http://localhost:3000
+    NEXTAUTH_SECRET=your-next-auth-secret
+   ```
+
+5. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+6. Open your web browser and access the app at `http://localhost:3000`.
+
+## Usage
+
+1. Sign in using your Google account to access personalized features.
+
+2. Browse the car catalog, filter cars, and view detailed information.
+
+3. Save your favorite cars by clicking the "Add to Favorites" button.
+
+4. Access your saved favorites in the app for quick reference.
+
+## Deployment
+
+You can deploy the Car Catalog App to various hosting platforms such as Vercel, Netlify, or your preferred hosting service. Make sure to configure the deployment settings, including environment variables, according to the platform's documentation.
+
+## Acknowledgments
+
+- Thanks to API-Ninjas for providing the car data API.
+
+- Special thanks to the Next.js, React, and TypeScript communities for their excellent libraries and resources.
