@@ -4,16 +4,6 @@
 
 The Car Catalog App is a web application that provides information about automobiles. It can be used as both a car sales and rental platform, offering users the ability to filter cars by manufacturer and year of manufacture. The application utilizes the Cars by API-Ninjas API to retrieve car data. Additionally, it features Google authentication for users to save their favorite cars. The app is fully responsive and built using the following technologies: Next.js, Next Auth, React, TypeScript, MongoDB, and Tailwind CSS.
 
-## Images
-
-Main section
-![img.png](img.png)
-
-Car details
-![img_1.png](img_1.png)
-
-Favorite cars
-![img_2.png](img_2.png)
 ## Features
 
 - **Car Information**: Access detailed information about various car models, including specifications, images, and more.
@@ -91,6 +81,17 @@ To run the Car Catalog App locally, follow these steps:
 3. Save your favorite cars by clicking the "Add to Favorites" button.
 
 4. Access your saved favorites in the app for quick reference.
+
+## Images
+
+Main section
+![img.png](img.png)
+
+Car details
+![img_1.png](img_1.png)
+
+Favorite cars
+![img_2.png](img_2.png)
 
 ## Deployment
 
