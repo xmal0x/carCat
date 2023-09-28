@@ -37,13 +37,13 @@ To run the Car Catalog App locally, follow these steps:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-repo-url.git
+   git clone https://github.com/xmal0x/carCat.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd car-catalog-app
+   cd carCat
    ```
 
 3. Install the dependencies:
