@@ -26,7 +26,7 @@ const Navbar = () => {
 
     return (
         <div className="w-full absolute z-10 bg-black-100">
-            <nav className="max-width flex-between padding-x py-3 text-white">
+            <nav className="max-width flex-between padding-x py-3 items-center text-white">
                 <Link href="/" className="flex-center">
                     <Image src="/logo.svg" alt="logo" className="object-contain" width={40} height={40}/>
                     <p className="text-white md:text-[30px] text-[24px] ml-2 md:block hidden">CarCat</p>
@@ -55,10 +55,11 @@ const Navbar = () => {
                     )
                     : (
                         <>
-                            {providers && Object.values(providers).map((provider) => (
-                                <Button key={provider.id} text="Log In" styles="bg-white"
-                                        onClick={() => signIn(provider.id)}/>
-                            ))}
+                            {/*TODO For auth logic uncomment this*/}
+                            {/*{providers && Object.values(providers).map((provider) => (*/}
+                            {/*    <Button key={provider.id} text="Log In" styles="bg-white"*/}
+                            {/*            onClick={() => signIn(provider.id)}/>*/}
+                            {/*))}*/}
                         </>
                     )
                 }
